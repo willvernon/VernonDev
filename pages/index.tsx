@@ -8,7 +8,7 @@ import BlogPostCard from '../components/BlogPostCard';
 
 import VideoCard from '../components/ToolCard';
 
-import Loading from '../components/Loading';
+import Loading from './Loading';
 
 export default function Home() {
   return (

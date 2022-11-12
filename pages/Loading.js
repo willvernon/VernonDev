@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import ReactLoading from 'react-loading';
 
 import Coffee from '../public/static/Coffee.gif';
-import LoadingSpinner from './LoadingSpinner';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -60,7 +60,6 @@ export default class Loading extends React.Component {
               <br />
               <br />
               <FadeIn>
-                
                 <Image
                   src={Coffee}
                   alt="Coffee"

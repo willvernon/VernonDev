@@ -5,13 +5,12 @@ import { SessionProvider } from 'next-auth/react';
 
 import { Analytics } from '@vercel/analytics/react';
 
-import Loading from '../components/Loading';
+import Loading from './Loading';
 
 export default function App({
   Component,
   pageProps: { session, ...pageProps }
-}) 
-{
+}) {
   return (
     <SessionProvider session={session}>
       <ThemeProvider attribute="class">
