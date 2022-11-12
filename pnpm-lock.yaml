@@ -57,8 +57,11 @@ specifiers:
   react-bootstrap-icons: ^1.9.1
   react-day-and-night-toggle: ^1.0.18
   react-dom: 18.2.0
+  react-fade-in: ^2.0.1
   react-icons: ^4.6.0
   react-is: '>=18.0.0 <19.0.0'
+  react-loading: ^2.0.3
+  react-lottie: ^1.2.3
   react-particle-image: ^1.0.2
   reading-time: ^1.5.0
   rehype: 12.0.1
@@ -120,8 +123,11 @@ dependencies:
   react-bootstrap-icons: 1.9.1_react@18.2.0
   react-day-and-night-toggle: 1.0.18_spuwmphfmcnhwzdquktmbeppru
   react-dom: 18.2.0_react@18.2.0
+  react-fade-in: 2.0.1_react@18.2.0
   react-icons: 4.6.0_react@18.2.0
   react-is: 18.2.0
+  react-loading: 2.0.3_sh5qlbywuemxd2y3xkrw2y2kr4
+  react-lottie: 1.2.3_react@18.2.0
   react-particle-image: 1.0.2_biqbaboplfbrettd7655fr4n2y
   rxjs: 6.6.7
   sanity: 3.0.0-rc.2_zgyzqzka6no4x2uusndvv5hvry
@@ -3566,6 +3572,13 @@ packages:
     resolution: {integrity: sha512-qrPaCSo9c8RHNRHIotaufGbuOBN8rtdC4QrrFFc43vyWCCz7Kl7GL1PGaXtMGQZUXrkCjNEgxDfmAuAabr/rlw==}
     dev: false
 
+  /babel-runtime/6.26.0:
+    resolution: {integrity: sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==}
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.11.1
+    dev: false
+
   /bail/2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
 
@@ -3923,6 +3936,12 @@ packages:
     resolution: {integrity: sha512-LiN6fylpVBVwT8twhhluD9TzXmZQQsr2I2eIKtWNbZI1XMfBT7CV18itaN6RA7EtQd/SDdRx/wzvAShX2HvhQA==}
     requiresBuild: true
     dev: true
+
+  /core-js/2.6.12:
+    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+    requiresBuild: true
+    dev: false
 
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -6718,6 +6737,10 @@ packages:
     dependencies:
       js-tokens: 4.0.0
 
+  /lottie-web/5.9.6:
+    resolution: {integrity: sha512-JFs7KsHwflugH5qIXBpB4905yC1Sub2MZWtl/elvO/QC6qj1ApqbUZJyjzJseJUtVpgiDaXQLjBlIJGS7UUUXA==}
+    dev: false
+
   /lru-cache/5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
     dependencies:
@@ -8287,6 +8310,14 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-fade-in/2.0.1_react@18.2.0:
+    resolution: {integrity: sha512-oqS/WT4znaXEHmL+yo0IDUDY7uC9K4RP35j1SdRUEBspR09B2iIC0i8oJ28tPOr6Ez/L2aktF9p89j+DbsTVNw==}
+    peerDependencies:
+      react: ^16.8 || 17
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /react-fast-compare/3.2.0:
     resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
     dev: false
@@ -8367,6 +8398,27 @@ packages:
 
   /react-lifecycles-compat/3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
+    dev: false
+
+  /react-loading/2.0.3_sh5qlbywuemxd2y3xkrw2y2kr4:
+    resolution: {integrity: sha512-Vdqy79zq+bpeWJqC+xjltUjuGApyoItPgL0vgVfcJHhqwU7bAMKzysfGW/ADu6i0z0JiOCRJjo+IkFNkRNbA3A==}
+    peerDependencies:
+      prop-types: ^15.6.0
+      react: '>=0.14.0'
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
+  /react-lottie/1.2.3_react@18.2.0:
+    resolution: {integrity: sha512-qLCERxUr8M+4mm1LU0Ruxw5Y5Fn/OmYkGfnA+JDM/dZb3oKwVAJCjwnjkj9TMHtzR2U6sMEUD3ZZ1RaHagM7kA==}
+    engines: {npm: ^3.0.0}
+    peerDependencies:
+      react: ^0.14.7 || ^15.0.0 || ^16.0.0
+    dependencies:
+      babel-runtime: 6.26.0
+      lottie-web: 5.9.6
+      react: 18.2.0
     dev: false
 
   /react-markdown/8.0.3_bbvjflvjoibwhtpmedigb26h6y:
@@ -8684,6 +8736,10 @@ packages:
       '@types/prismjs': 1.26.0
       hastscript: 7.1.0
       parse-entities: 4.0.0
+
+  /regenerator-runtime/0.11.1:
+    resolution: {integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==}
+    dev: false
 
   /regenerator-runtime/0.13.10:
     resolution: {integrity: sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==}
