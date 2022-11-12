@@ -2,8 +2,8 @@ import React from 'react';
 import FadeIn from 'react-fade-in';
 import Lottie from 'react-lottie';
 import ReactLoading from 'react-loading';
-import * as Astro from '../public/Astro.json';
-import * as Coffee from '../public/Coffee.json';
+
+import Coffee from '../public/static/Coffee.gif';
 import LoadingSpinner from './LoadingSpinner';
 
 import Image from 'next/image';
@@ -60,7 +60,15 @@ export default class Loading extends React.Component {
               <br />
               <br />
               <FadeIn>
-                <Lottie options={defaultOptions} height="50%" width="50%" />
+                
+                <Image
+                  src={Coffee}
+                  alt="Coffee"
+                  height={400}
+                  width={400}
+                  quality={100}
+                  className="rounded-full"
+                />
               </FadeIn>
             </span>
           </div>
