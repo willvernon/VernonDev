@@ -4,7 +4,6 @@ import Lottie from 'react-lottie';
 import ReactLoading from 'react-loading';
 
 import Coffee from '../public/static/Coffee.gif';
-import LoadingSpinner from '../components/LoadingSpinner';
 
 import Image from 'next/image';
 import Link from 'next/link';
