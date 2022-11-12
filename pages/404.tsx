@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Travolta from 'public/static/TravoltaLost.gif';
+import Travolta from 'public/static/Travolta.gif';
 import Container from 'components/Container';
 
 export default function NotFound() {
