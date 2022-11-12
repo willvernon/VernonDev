@@ -17,5 +17,10 @@ module.exports = {
     /// Set this to false if you want production builds to abort if there's lint errors
     ignoreDuringBuilds: process.env.VERCEL_ENV === 'production'
   },
-  future: { webpack5: true }
+  future: { webpack5: true, strictPostcssConfiguration: true }
 };
+
+console.log(
+    'next.config.js',
+    JSON.stringify(module.exports, null, 2)
+);
