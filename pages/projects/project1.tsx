@@ -9,9 +9,6 @@ import mock from '../../public/projects/bblgx-website/bblgx-w-mock.png';
 import bblgx from 'public/projects/bblgx.png';
 import fmock from '../../public/projects/bblgx-website/mock-final.png';
 
-import { BsCheckAll } from '@react-icons/all-files/Bs/BsCheckAll';
-import { BsFillXSquareFill } from '@react-icons/all-files/Bs/BsFillXSquareFill';
-
 // import { BsFillXSquareFill } from 'react-icons';
 
 export default function Project1() {
