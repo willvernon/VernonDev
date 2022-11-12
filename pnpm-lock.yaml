@@ -59,6 +59,7 @@ specifiers:
   react-dom: 18.2.0
   react-icons: ^4.6.0
   react-is: '>=18.0.0 <19.0.0'
+  react-particle-image: ^1.0.2
   reading-time: ^1.5.0
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
@@ -121,6 +122,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.6.0_react@18.2.0
   react-is: 18.2.0
+  react-particle-image: 1.0.2_biqbaboplfbrettd7655fr4n2y
   rxjs: 6.6.7
   sanity: 3.0.0-rc.2_zgyzqzka6no4x2uusndvv5hvry
   sanity-plugin-asset-source-unsplash: 3.0.0-v3-studio.13_qnun4orxfpw4gdo2nwbw6h4xmq
@@ -6661,12 +6663,20 @@ packages:
     resolution: {integrity: sha512-dS2j+W26TQ7taQBGN8Lbbq04ssV3emRw4NY58WErlTO29pIqS0HmoT5aJ9+TUQ1N3G+JOZSji4eugsWwGp9yPA==}
     dev: false
 
+  /lodash.flatmap/4.5.0:
+    resolution: {integrity: sha512-/OcpcAGWlrZyoHGeHh3cAoa6nGdX6QYtmzNP84Jqol6UEQQ2gIaU3H+0eICcjcKGl0/XF8LWOujNn9lffsnaOg==}
+    dev: false
+
   /lodash.flatten/4.4.0:
     resolution: {integrity: sha512-C5N2Z3DgnnKr0LOpv/hKCgKdb7ZZwafIrsesve6lmzvZIRZRGaZ/l6Q8+2W7NaT+ZwO3fFlSCzCzrDCFdJfZ4g==}
     dev: false
 
   /lodash.flow/3.5.0:
     resolution: {integrity: sha512-ff3BX/tSioo+XojX4MOsOMhJw0nZoUEF011LX8g8d3gvjVbxd89cCio4BCXronjxcTUIJUoqKEUA+n4CqvvRPw==}
+    dev: false
+
+  /lodash.isequal/4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
     dev: false
 
   /lodash.isplainobject/4.0.6:
@@ -6678,6 +6688,10 @@ packages:
 
   /lodash.mergewith/4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    dev: false
+
+  /lodash.throttle/4.1.1:
+    resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
     dev: false
 
   /lodash.union/4.6.0:
@@ -8380,6 +8394,20 @@ packages:
       vfile: 5.3.5
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /react-particle-image/1.0.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-6Njiagfhbe0VIxuVlhcWP0bk9g42xLaHTcHT7ztTxZ7GdXJtTDNzbW2hMjMV74LdST1lKag7e7kw+5DDmojzTA==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      lodash.flatmap: 4.5.0
+      lodash.isequal: 4.5.0
+      lodash.throttle: 4.1.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-photo-album/1.16.1_react@18.2.0:
