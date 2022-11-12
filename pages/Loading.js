@@ -3,7 +3,7 @@ import FadeIn from 'react-fade-in';
 import Lottie from 'react-lottie';
 import ReactLoading from 'react-loading';
 
-import Coffee from '../public/static/Coffee.Gif';
+import Coffee from '../public/static/images/Coffee.Gif';
 
 import Image from 'next/image';
 import Link from 'next/link';
