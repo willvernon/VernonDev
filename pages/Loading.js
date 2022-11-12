@@ -3,7 +3,7 @@ import FadeIn from 'react-fade-in';
 import Lottie from 'react-lottie';
 import ReactLoading from 'react-loading';
 
-import Coffee from '../public/static/Coffee.gif';
+import Travolta from '../public/static/Travolta.gif';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ import VideoCard from '../components/ToolCard';
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: Coffee.default,
+  animationData: Travolta.default,
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid slice'
   }
@@ -60,7 +60,7 @@ export default class Loading extends React.Component {
               <br />
               <FadeIn>
                 <Image
-                  src={Coffee}
+                  src={Travolta}
                   alt="Coffee"
                   height={400}
                   width={400}
