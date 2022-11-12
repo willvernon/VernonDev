@@ -6,7 +6,9 @@ module.exports = {
   images: {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
-      { hostname: 'source.unsplash.com' }
+      { hostname: 'source.unsplash.com' },
+      { hostname: 'github.com' },
+      { hostname: 'tenor.com' }
     ]
   },
   typescript: {
@@ -20,7 +22,4 @@ module.exports = {
   future: { webpack5: true, strictPostcssConfiguration: true }
 };
 
-console.log(
-    'next.config.js',
-    JSON.stringify(module.exports, null, 2)
-);
+console.log('next.config.js', JSON.stringify(module.exports, null, 2));

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-
+import Image from 'next/image';
+import Travolta from '../public/TravoltaLost.gif';
 import Container from 'components/Container';
 
 export default function NotFound() {
@@ -15,6 +16,16 @@ export default function NotFound() {
           something wrong. I&apos;m guessing you spelled something wrong. Can
           you double check that URL?
         </p>
+        <div className='m-auto mb-10'>
+          <Image
+            src={Travolta}
+            alt="Travolta"
+            width={400}
+            height={100}
+            quality={100}
+            className="rounded-full"
+          />
+        </div>
         <Link
           href="/"
           className="p-1 sm:p-4 w-64 font-bold mx-auto bg-gray-200 dark:bg-gray-800 text-center rounded-md text-black dark:text-white"
