@@ -11,14 +11,21 @@ export default function NotFound() {
           404 – You Seem Lost
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">
-          It seems you&apos;ve found something that used to exist, or
-          you are trying to time travel to a page that doesn&apos;t quite
-          exist yet.
+          It seems you&apos;ve found something that used to exist, or you are
+          trying to time travel to a page that doesn&apos;t quite exist yet.
         </p>
         <div className="m-auto mb-10">
-          <Image
+          {/* <Image
             src={Travolta}
             alt="Travolta"
+            width={400}
+            height={100}
+            quality={100}
+            className="rounded-full"
+          /> */}
+          <Image
+            src="https://tenor.com/Ra1M.gif"
+            alt="404"
             width={400}
             height={100}
             quality={100}
