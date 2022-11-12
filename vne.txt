@@ -1,0 +1,45 @@
+backwards env
+
+// For retrieving Unsplash metrics
+UNSPLASH_ACCESS_KEY='KYdyoL2wRLuLrt01hNX8uwLt9vs1OqY_P9AS-CjwIVs'
+
+// For retrieving YouTube metrics
+GOOGLE_PRIVATE_KEY=
+GOOGLE_CLIENT_EMAIL=
+
+// For subscribe & show metrics for newsletter
+REVUE_API_KEY=
+
+// For showing now playing song from Spotify
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+SPOTIFY_REFRESH_TOKEN=
+
+// For NextAuth.js and GitHub OAuth
+OAUTH_CLIENT_KEY='fbfabbef7a8e35e214fe'
+OAUTH_CLIENT_SECRET='9fc79474b9bad776d0fa5977c9665fa455b9212f'
+NEXTAUTH_URL=http://localhost:3000
+
+// For retrieving Tweets
+TWITTER_API_KEY='E4srm6Rqtf935sozwIwvOuFEL'
+
+// For post views and guestbook
+DATABASE_URL='mysql://y3uinks1l4p4d2fvpjyy:pscale_pw_reFrIR9sAwihKJeAdRuIsu82AVwAgAi1Xzbkw4U5jmz@us-east.connect.psdb.cloud/vernondev?sslaccept=strict'
+
+// For Sanity CMS
+NEXT_PUBLIC_SANITY_PROJECT_ID='vum0qrbx'
+NEXT_PUBLIC_SANITY_DATASET='production'
+SANITY_API_TOKEN='skBq63QthAd0wX6kavk8E9IOqg02mNlG3R0HOiJivL2s8mFwzvXsSJqnqEwW2ub3A1MshbEd5EdZis9xQWcoGxBbVgzqvEvNsnxWdLFybClf99L1s1rzdlEKOOXvT9HA5jGcdiul5OXaVUTz3cp4EsQRKzNjNfGpd9fGRJN10ajB5tBkqJoo'
+SANITY_PREVIEW_SECRET='sk1EXPzwAcGl1DPAQF7n7qN4eSspyVNoCch6iIiju8wlInrDWCr8zlc4zi6eDV2KuDKE5VeXIsm8ZPYkS4gNc6KuHW5iIMiVaBejySfFZVwAHQRETbqnbKwBjO6MbtmYzRhX9ipV4s99RP7Zkz4jJkx1UqV5tOh66xIHFElY6DVZakJqqRoP'
+SANITY_STUDIO_REVALIDATE_SECRET=
+
+
+const sanityClient = require('@sanity/client');
+
+module.exports = sanityClient({
+  projectId: 'vum0qrbx', // you can find this in sanity.json
+  dataset: 'production', // or the name you chose in step 1
+  useCdn: true, // `false` if you want to ensure fresh data
+  apiVersion: '2022-11-11'
+});
+
