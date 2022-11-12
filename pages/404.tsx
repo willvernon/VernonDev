@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Travolta from '../public/TravoltaLost.gif';
+import Travolta from 'public/static/TravoltaLost.gif';
 import Container from 'components/Container';
 
 export default function NotFound() {
@@ -15,15 +15,7 @@ export default function NotFound() {
           trying to time travel to a page that doesn&apos;t quite exist yet.
         </p>
         <div className="m-auto mb-10">
-          <Image
-            src={Travolta}
-            alt="Travolta"
-            width={400}
-            height={100}
-            quality={100}
-            className="rounded-full"
-          />
-          
+          <Image src={Travolta} alt="404" height={400} width={400} quality={100} className="rounded-full"/>
         </div>
         <Link
           href="/"
