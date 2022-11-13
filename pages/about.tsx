@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import AboutMeDB from 'components/About/AboutMeDB';
-import Uses from './uses';
+
 
 import Container from 'components/Container';
 import avatar from '../public/MeMoji-Mac.png';

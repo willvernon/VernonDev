@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 function AboutMeDB() {
   return (
-    <div className="grid grid-cols-8 grid-rows-3 w-full h-full bg-[#191919] rounded-2xl">
+    <div className="grid grid-cols-8 grid-rows-3 w-full h-full mt-12 bg-[#191919] rounded-2xl">
       <div className="row-start-1 row-span-2 col-start-1 col-span-4 m-1 rounded-xl bg-white text-center">
         <h1 className="text-black">About Me</h1>
       </div>
