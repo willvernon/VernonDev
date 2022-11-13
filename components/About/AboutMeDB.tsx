@@ -55,7 +55,8 @@ function AboutMeDB() {
         </ul>
       </div>
       <div className="row-start-2 row-span-1 col-start-5 col-span-2 m-1 rounded-xl bg-transparent h-25 w-25 text-center">
-        <div className='w-auto h-16 bg-orange-400 rounded-xl'></div>
+        <div className="w-auto h-14 bg-orange-400 rounded-xl text-left pl-20 pt-3 font-mono text-xs text-slate-700 font-black"><p>My <br /> Projects</p></div>
+        <div className="w-auto h-14 bg-white rounded-xl rotate-12 -translate-x-2 shadow-sm shadow-black text-center"> <p className='text-slate-500 font-mono text-center pt-4 font-black text-lg tracking-widest'>VernonDev</p></div>
         <div></div>
       </div>
       <div className="row-start-2 row-span-1 col-start-7 col-span-2 m-1 rounded-xl bg-white h-25 w-25 text-center">
