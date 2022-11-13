@@ -2,17 +2,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Container from 'components/Container';
-import avatar from '../../public/MeMoji-Mac.png';
+import MeMoji from '../../public/MeMoji-Mac.png';
 import avatarBW from 'public/avatar.jpg';
 import sketch from '../../public/projects/bblgx-website/bblgx-website-sketch.png';
 import mock from '../../public/projects/bblgx-website/bblgx-w-mock.png';
 import bblgx from 'public/projects/bblgx.png';
 import fmock from '../../public/projects/bblgx-website/mock-final.png';
 
-
 // import { BsFillXSquareFill } from 'react-icons';
 
-export default function Project2() {
+export default function LgxWebsite() {
   return (
     <Container title="Logistics Website">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
@@ -52,7 +51,7 @@ export default function Project2() {
                   alt="MeMoji-Mac"
                   width={400}
                   quality={100}
-                  src={avatar}
+                  src={MeMoji}
                   className="rounded-md"
                 />
               </a>

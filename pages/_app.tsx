@@ -12,7 +12,7 @@ export default function App({
 }) {
   return (
     <SessionProvider session={session}>
-      <Loading />
+      {/* <Loading /> */}
         <ThemeProvider attribute="class">
           <main className="font-mono">
             <Component {...pageProps} />

@@ -32,14 +32,10 @@ export default function Dashboard() {
             </Link>
           </p>
         </div>
-        <div className="flex flex-col w-full">
+        <div className=" w-full">
           <ProjectsCard />
         </div>
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
-          {/* <GitHub /> */}
-          {/* <Analytics /> */}
-          {/* <Unsplash /> */}
-        </div>
+
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Projects
         </h2>

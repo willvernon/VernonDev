@@ -10,7 +10,7 @@ export default function ProjectsCard() {
   const link = '..';
 
   return (
-    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
+    <div className="grid gap-4 lg:grid-cols-2 grid-cols-1 my-2 w-full">
       <MetricCard
         header="Logistics Website"
         link="/projects/project5"
@@ -19,7 +19,7 @@ export default function ProjectsCard() {
       />
       <MetricCard
         header="Inner Management App"
-        link="/portfolio"
+        link="/projects/InnerMgnt"
         tools="Built w/ Swift & Figma"
         image={demo}
       />
