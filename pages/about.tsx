@@ -7,6 +7,7 @@ import Container from 'components/Container';
 import avatar from '../public/MeMoji-Mac.png';
 import avatarBW from 'public/avatar.jpg';
 import resume from 'public/static/Resume.png';
+import MyGear from 'components/MyGear'
 
 export default function About() {
   return (
@@ -60,7 +61,7 @@ export default function About() {
           </div>
         </div>
         <br />
-        <Uses />
+        <MyGear />
       </div>
     </Container>
   );

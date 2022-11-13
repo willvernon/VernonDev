@@ -43,6 +43,7 @@ export default class Loading extends React.Component {
         {!this.state.done ? (
           <div class="flex justify-center items-center h-screen fixed left-0 right-0 bottom-0 w-full z-50 overflow-hidden bg-black">
             <span class="visually-hidden">
+              
               <FadeIn>
                 <Image
                   src={Coffee}
@@ -56,7 +57,7 @@ export default class Loading extends React.Component {
             </span>
           </div>
         ) : (
-          <></> //Put what ever you want to load after the load screen currently setup as a overlay
+          <></>//Put what ever you want to load after the load screen currently setup as a overlay
         )}
       </div>
     );
