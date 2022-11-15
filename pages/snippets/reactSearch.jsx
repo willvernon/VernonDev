@@ -14,7 +14,7 @@ export default function reactSearch() {
           </p>
           <Image
             className="rounded-3xl"
-            alt={`My computer desk`}
+            alt={`search`}
             src={reactSearchSnippet}
             width={2164 / 2}
             height={1546 / 2}

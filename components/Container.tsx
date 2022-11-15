@@ -4,15 +4,11 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
 import cn from 'classnames';
-import DayNightToggle from 'react-day-and-night-toggle';
-import { ThemeModeToggler } from './Theme/ThemeModeToggle';
-
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
 
 import { MoonIcon } from '../components/Theme/Moon';
 import { SunIcon } from '../components/Theme/Sun';
-import { motion } from 'framer-motion';
 
 function NavItem({ href, text }) {
   const router = useRouter();

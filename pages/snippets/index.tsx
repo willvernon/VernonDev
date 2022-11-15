@@ -29,14 +29,14 @@ export default function Snippets() {
             image={react}
           />
           <SnippetsCard
-            header="test1"
-            link=""
+            header="Container"
+            link="/snippets/container"
             tools="react + tailwind"
-            image={tailwind}
+            image={react}
           />
           <SnippetsCard
-            header="test1"
-            link=""
+            header="Mobile Nav"
+            link="/snippets/mobileNav"
             tools="react + tailwind"
             image={tailwind}
           />
