@@ -38,24 +38,14 @@ export default function LgxWebsite() {
                 React: <a href="https://reactjs.org/">Check it Out!</a>
               </li>
               <li>
-                LinkedIn:{' '}
-                <a href="https://www.linkedin.com/in/wmvernon/">htt</a>
+                TailwindCSS:{' '}
+                <a href="https://tailwindcss.com">Take a Look</a>
               </li>
               <li>
                 Website: <Link href="https://bblgx.com">bblgx.com</Link>
               </li>
             </ul>
-            <div className=" -mr-12 space-x-8">
-              <a href="/avatar.jpg">
-                <Image
-                  alt="MeMoji-Mac"
-                  width={400}
-                  quality={100}
-                  src={MeMoji}
-                  className="rounded-md"
-                />
-              </a>
-            </div>
+            
           </div>
           <h1 className="text-[#e64c33]">Bio</h1>
           <h2>Job Title</h2>

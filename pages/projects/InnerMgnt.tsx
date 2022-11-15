@@ -19,7 +19,7 @@ export default function InnerMgnt() {
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Inner Management
         </h1>
-        <div className="w-[100%] h-[25rem] relative">
+        <div className="w-[100%] h-[31rem] relative">
           <div className="absolute top-0 left-0 w-[100%] h-[25rem] rounded-[2rem] " />
           <Image
             className="absolute z-1"
