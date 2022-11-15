@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
-// import Analytics from 'components/projects/Analytics';
+
 import Container from 'components/Container';
-// import GitHub from 'components/projects/Github';
-// import Unsplash from 'components/projects/Unsplash';
+
 import ProjectsCard from 'components/projects/project';
-import MetricCard from 'components/projects/Card';
 import SoloCard from 'components/projects/SoloCard';
 import scientia from '../public/projects/scientia.png';
+import nhash from '../public/projects/NHASH.png';
+import linen from '../public/projects/linen.png';
 
 export default function Dashboard() {
   return (
@@ -37,7 +37,7 @@ export default function Dashboard() {
         </div>
 
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
-          Projects
+          Other Projects
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           Curious what I have worked on or currently working on? Here&apos;s
@@ -45,26 +45,18 @@ export default function Dashboard() {
         </p>
         <div className="flex flex-col-1 w-full my-3">
           <SoloCard
-            header="project5"
-            link="/projects/project5"
-            tools="Built w/ React, Figma, &"
-            image={scientia}
+            header="NHASH"
+            link="/projects/nhash"
+            tools="Built w/ HTML"
+            image={nhash}
           />
         </div>
         <div className="flex flex-col w-full my-3">
           <SoloCard
-            header="project5"
-            link="/projects/project5"
-            tools="Built w/ React, Figma, &"
-            image={scientia}
-          />
-        </div>
-        <div className="flex flex-col w-full my-3">
-          <SoloCard
-            header="project5"
-            link="/projects/project5"
-            tools="Built w/ React, Figma, &"
-            image={scientia}
+            header="Custom Linen"
+            link="/projects/linen"
+            tools="Built w/ Vite HTML, Figma, & Tailwind"
+            image={linen}
           />
         </div>
       </div>
