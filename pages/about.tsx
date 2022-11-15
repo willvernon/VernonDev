@@ -12,11 +12,24 @@ import MyGear from 'components/MyGear'
 export default function About() {
   return (
     <Container title="About – Will Vernon">
-      <div className="flex flex-col justify-center items-start max-w-4xl mx-auto mb-16 w-full">
+      <div className="import avatar from '../public/MeMoji-Mac.png';">
         
         <AboutMeDB />
-        <div className="mb-8 prose dark:prose-dark leading-6">
+        <div className="mb-8 prose dark:prose-dark leading-6 md:hidden">
+          <h1 className="text-black dark:text-white">About Me</h1>
+          <div className="sm:hidden">
+              
+                <Image
+                  alt="MeMoji-Mac"
+                  width={300}
+                  quality={100}
+                  src={avatar}
+                  className="rounded-md "
+                />
+              
+            </div>
           <div className="flex">
+            
             <ul>
               <h2>Links</h2>
               {/* <li>
@@ -27,36 +40,28 @@ export default function About() {
               </li>
               <li>
                 Website:{' '}
-                <Link href="https://vernondev.com">https://vernondev.com</Link>
+                <Link href="https://vernondev.com">vernondev.com</Link>
               </li>
               <li>
                 LinkedIn:{' '}
                 <a href="https://www.linkedin.com/in/wmvernon/">
-                  https://www.linkedin.com/in/wmvernon
+                  wmvernon
                 </a>
               </li>
             </ul>
-            <div className=" -mr-12 space-x-8">
-              <a href="/avatar.jpg">
+            <div className="max-sm:hidden">
+              
                 <Image
                   alt="MeMoji-Mac"
-                  width={400}
+                  width={300}
                   quality={100}
                   src={avatar}
                   className="rounded-md "
                 />
-              </a>
+              
             </div>
           </div>
-          <div className="w-[100%] h-[55rem] my-[5rem] rounded-3xl relative">
-            <Image
-              className="absolute z-1 rounded-3xl"
-              layout="fill"
-              objectFit="cover"
-              src={resume}
-              alt="/"
-            />
-          </div>
+          
         </div>
         <br />
         <MyGear />

@@ -43,15 +43,15 @@ export default function Dashboard() {
           Curious what I have worked on or currently working on? Here&apos;s
           some of my projects on Github.
         </p>
-        <div className="flex flex-col-1 w-full my-3">
+        <div className="flex flex-col-1 left-0 w-full my-3">
           <SoloCard
-            header="NHASH"
+            header="NHASH Display"
             link="/projects/nhash"
             tools="Built w/ HTML"
             image={nhash}
           />
         </div>
-        <div className="flex flex-col w-full my-3">
+        <div className="flex flex-col right-0 w-full my-3">
           <SoloCard
             header="Custom Linen"
             link="/projects/linen"

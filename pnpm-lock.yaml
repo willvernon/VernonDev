@@ -46,6 +46,7 @@ specifiers:
   next-mdx-remote: ^4.1.0
   next-sanity: ^1.0.6
   next-themes: ^0.2.1
+  nprogress: ^0.2.0
   pnpm: ^7.15.0
   postcss: ^8.4.18
   prettier: 2.7.1
@@ -117,6 +118,7 @@ dependencies:
   next-mdx-remote: 4.1.0_biqbaboplfbrettd7655fr4n2y
   next-sanity: 1.0.6_7b4y7rukcnib3zb5nozdr45pum
   next-themes: 0.2.1_ogpkrxaz2lg6nectum6dl66tn4
+  nprogress: 0.2.0
   pnpm: 7.15.0
   prop-types: 15.8.1
   react: 18.2.0
@@ -7583,6 +7585,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-key: 3.1.1
+    dev: false
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
     dev: false
 
   /nth-check/2.1.1:

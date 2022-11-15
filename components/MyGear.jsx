@@ -1,18 +1,33 @@
 import Container from 'components/Container';
 import Image from 'next/image';
+import resume from 'public/static/Resume.png';
+import Link from 'next/link';
+import avatar from '../public/MeMoji-Mac.png';
 
 export default function Uses() {
   return (
     <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+     
+      <Image
+        className="rounded-3xl"
+        src={resume}
+        alt="/"
+        width={2164 / 2}
+        height={1546 / 2}
+        priority
+            />
+            <br />
+            <br />
       <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-        ---My Gear
+        My Gear
       </h1>
-      <p className="text-gray-700 dark:text-gray-300 mt-2 mb-8">
+      <p className="text-gray-700 dark:text-gray-200 mt-2 mb-8">
         Here&apos;s what tech I&apos;m currently using for coding, work, and
         life in general. It changes and adapts widely based on learning new tech
         and my love for learning new things to maximize quality of life and
         productivity.
       </p>
+      
       <Image
         className="rounded-lg"
         alt={`My computer desk`}

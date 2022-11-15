@@ -6,26 +6,26 @@ import Link from 'next/link';
 
 function AboutMeDB() {
   return (
-    <div className="grid grid-cols-8 grid-rows-3 w-full h-full my-12 bg-[#191919] rounded-2xl">
+    <div className="grid grid-flow-col grid-glow-rows md:grid-cols-8 md:grid-rows-3   max-md:hidden max-h-[45rem] w-full h-full my-4 bg-[#191919] rounded-2xl">
       {/* About Me Box */}
       <div className="row-start-1 row-span-2 col-start-1 col-span-4 m-1 rounded-xl bg-white text-center">
-        <div className="w-auto h-44 bg-white mt-32  border-b border-slate-500 text-center">
+        <div className="w-auto md:h-[55%]  bg-white mt-32  border-b border-slate-500 text-center">
           {' '}
-          <p className="text-slate-500 font-mono text-center pt-4 font-black text-3xl tracking-widest">
+          <p className="text-slate-500 font-sans text-center pt-4 font-black text-3xl tracking-widest">
             About Me
           </p>
         </div>
-        <div className=" text-black font-bold  ">
-          <p className='p-3 m-auto'>Coder-Designer-Tech-Sports</p>
+        <div className=" text-black font-bold ">
+          <p className=' m-auto'>Coder-Designer-Tech-Sports</p>
         </div>
       </div>
       {/* Computer Image Box */}
-      <div className="row-start-1 row-span-1 col-start-5 col-span-2 m-1 rounded-xl bg-transparent h-25 w-25 text-center">
+      <div className="row-start-1 row-span-1 col-start-5 col-span-2 m-1 rounded-xl bg-transparent h-20 w-25 text-center">
         <Image
           src={Computer}
           alt="Box 7"
-          layout="contain"
-          className="rounded-xl opacity-80"
+          width='200'
+          className="rounded-xl opacity-80 ml-3"
         />
       </div>
       {/* Mobile Mini Nav */}
