@@ -1,7 +1,7 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import Firebase from '../../public/static/snippets/Firebase.png';
-import firebase2 from '../../public/static/snippets/firebase2.png'
+import Firebase from '../../public/static/snippets/Firebase.jpg';
+import firebase2 from '../../public/static/snippets/firebase2.jpg';
 
 export default function reactSearch() {
   return (

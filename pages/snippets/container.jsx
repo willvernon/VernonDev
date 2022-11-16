@@ -1,6 +1,6 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import Container from '../../public/static/snippets/Container.png';
+import Container from '../../public/static/snippets/Container.jpg';
 
 export default function reactSearch() {
   return (

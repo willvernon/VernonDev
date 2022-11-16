@@ -1,7 +1,7 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import Mobile from '../../public/static/snippets/Mobile.png';
-import CSS from '../../public/static/snippets/mobile-css.png'
+import Mobile from '../../public/static/snippets/Mobile.jpg';
+import CSS from '../../public/static/snippets/mobile-css.jpg';
 
 export default function reactSearch() {
   return (
