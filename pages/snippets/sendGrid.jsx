@@ -12,14 +12,14 @@ export default function reactSearch() {
         <p className="text-gray-700 dark:text-gray-300 mt-2 mb-8">
           Send an email to a user
         </p>
-        <Image
+        {/* <Image
           className="rounded-3xl"
           alt={`SendGrid`}
           src={SendGrid}
           width={2164 / 2}
           height={1546 / 2}
           priority
-        />
+        /> */}
       </article>
     </PageContainer>
   );
