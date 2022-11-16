@@ -2,7 +2,6 @@ import PageContainer from 'components/PageContainer';
 
 import SnippetsCard from 'components/SnippetsCard';
 
-import tailwind from '../../public/tailwindLogo.png';
 import react from '../../public/react.png';
 import sendGrid from '../../public/sendgrid.png';
 import firebase from '../../public/firebase.png';

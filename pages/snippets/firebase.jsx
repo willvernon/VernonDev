@@ -1,6 +1,6 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import reactSearchSnippet from '../../public/snippets-photos/react-search.png';
+
 import firebase from '../../public/static/snippets-photos/firebase.png';
 import firebase2 from '../../public/static/snippets-photos/firebase2.png';
 
