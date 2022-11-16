@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import resume from '../public/static/Resume.png'
 
 function Resume() {
   return (
@@ -9,7 +10,7 @@ function Resume() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={bblgx}
+          src={resume}
           alt="/"
         />
       </div>
