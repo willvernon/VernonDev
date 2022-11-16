@@ -11,6 +11,7 @@ specifiers:
   '@chakra-ui/react': ^2.3.7
   '@emotion/react': '>=11.0.0 <12.0.0'
   '@emotion/styled': '>=11.0.0 <12.0.0'
+  '@fullpage/react-fullpage': ^0.1.30
   '@mdx-js/loader': ^2.1.5
   '@mdx-js/react': ^2.1.5
   '@next/env': ^13.0.3
@@ -90,6 +91,7 @@ dependencies:
   '@chakra-ui/react': 2.3.7_dtdjoduw6kiu6cr4epw2n7thjy
   '@emotion/react': 11.10.5_5ihuxrpe4zse4p4tf6ubxcyzuu
   '@emotion/styled': 11.10.5_z7x6wqqd37fzu777gq3gq2bxru
+  '@fullpage/react-fullpage': 0.1.30
   '@mdx-js/loader': 2.1.5_webpack@5.75.0
   '@mdx-js/react': 2.1.5_react@18.2.0
   '@next/env': 13.0.3
@@ -400,6 +402,14 @@ packages:
       '@babel/helper-plugin-utils': 7.19.0
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.19.6
       '@babel/types': 7.20.0
+    dev: false
+
+  /@babel/polyfill/7.12.1:
+    resolution: {integrity: sha512-X0pi0V6gxLi6lFZpGmeNa4zxtwEmCs42isWLNjZZDE0Y8yVfgu0T2OAHlzBbdYlqbW/YXVvoBHpATEM+goCj8g==}
+    deprecated: 🚨 This package has been deprecated in favor of separate inclusion of a polyfill and regenerator-runtime (when needed). See the @babel/polyfill docs (https://babeljs.io/docs/en/babel-polyfill) for more information.
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.13.10
     dev: false
 
   /@babel/runtime-corejs3/7.20.1:
@@ -1698,6 +1708,13 @@ packages:
       '@floating-ui/dom': 1.0.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@fullpage/react-fullpage/0.1.30:
+    resolution: {integrity: sha512-MjZohl/jpHsE5riuAgHifFpue+2zROrC+GgEzOnHEgkEAdLP4MGv43sCjIKHX+3hyH+rOKu87EaiQfCTrNmqGw==}
+    dependencies:
+      '@babel/polyfill': 7.12.1
+      fullpage.js: 4.0.14
     dev: false
 
   /@humanwhocodes/config-array/0.11.7:
@@ -5491,6 +5508,10 @@ packages:
     dependencies:
       readable-stream: 1.1.14
       xregexp: 2.0.0
+    dev: false
+
+  /fullpage.js/4.0.14:
+    resolution: {integrity: sha512-vWo6846aDby/P4j6U4OZ5tVSbxxdAmPBL/AOumtZ7Ea2wcT7umBVw54RLhROlARPUpFSqUJopXLTfHVilSw+VA==}
     dev: false
 
   /function-bind/1.1.1:
