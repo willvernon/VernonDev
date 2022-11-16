@@ -1,6 +1,6 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import SendGrid from '../../public/static/snippets/sendgrid.jpg';
+// import SendGrid from '../../public/static/snippets/sendgrid.jpg';
 
 export default function reactSearch() {
   return (
