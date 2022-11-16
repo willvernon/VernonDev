@@ -1,20 +1,36 @@
 import React from 'react';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
-
-
-//issues with height
+import Image from 'next/image';
 
 function Splash() {
   return (
-    <div className=''>
-      <div className="flex justify-center text-center  items-center m-auto w-screen h-full mt-32">
-        <div className="text-2xl tracking-wider h-auto w-full text-gray-600 dark:text-gray-400 ">
+    <div>
+      <div className="flex flex-col sm:flex-row items-start h-screen m-auto mt-20">
+        <div className="md:w-[13rem]  max-sm:hidden relative mr-12">
+          <Image
+            alt="Will Vernon"
+            height={176}
+            width={176}
+            src="/avatar.jpg"
+            sizes="30vw"
+            priority
+            className="rounded-full filter  md:h-[12rem] md:w-[15rem]"
+          />
+        </div>
+        <div className="flex flex-col ">
+          <h1 className="font-bold  text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+            Hi! I&apos;m {''}
+            <br /> <span className="text-[#e64c33]">Will Vernon</span>
+          </h1>
+          <h2 className="text-gray-700 dark:text-gray-200 font-mono h-[3rem]">
+            Front End Developer & Designer{' '}
+            {/* <span className="font-semibold">Company</span> */}
+          </h2>
           <Typewriter
             options={{
               strings: [
                 'Welcome!',
-                'Click the button to start',
                 'Learn about me under the About-Tab',
                 'Checkout my Dashboard for projects',
                 'Find cool & helpful snippets',
@@ -28,13 +44,6 @@ function Splash() {
               delay: 100
             }}
           />
-        </div>
-      </div>
-      <div className="flex flex-col justify-center items-start mt-20">
-        <div className="m-auto">
-          <button className="bg-white p-2 rounded-xl">
-            <Link href="/home"> Enter Here </Link>
-          </button>
         </div>
       </div>
     </div>
