@@ -1,7 +1,7 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import reactSearchSnippet from '../../public/snippets-photos/react-search.png';
-import sendGrid from '../../public/snippets-photos/sendGrid.png'
+
+import sendGrid from '../../public/static/snippets-photos/sendGrid.png';
 
 export default function reactSearch() {
   return (
