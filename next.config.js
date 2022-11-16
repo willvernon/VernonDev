@@ -6,7 +6,9 @@ module.exports = {
   images: {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
-      { hostname: 'source.unsplash.com' }
+      { hostname: 'source.unsplash.com' },
+      { hostname: 'github.com' },
+      { hostname: 'tenor.com' }
     ]
   },
   typescript: {
@@ -17,5 +19,7 @@ module.exports = {
     /// Set this to false if you want production builds to abort if there's lint errors
     ignoreDuringBuilds: process.env.VERCEL_ENV === 'production'
   },
-  future: { webpack5: true }
+  future: { webpack5: true, strictPostcssConfiguration: true }
 };
+
+console.log('next.config.js', JSON.stringify(module.exports, null, 2));

@@ -1,13 +1,12 @@
 import Link from 'next/link';
 
-// import Analytics from 'components/projects/Analytics';
-import Container from 'components/Container';
-// import GitHub from 'components/projects/Github';
-// import Unsplash from 'components/projects/Unsplash';
+import Container from 'components/PageContainer';
+
 import ProjectsCard from 'components/projects/project';
-import MetricCard from 'components/projects/Card';
 import SoloCard from 'components/projects/SoloCard';
 import scientia from '../public/projects/scientia.png';
+import nhash from '../public/projects/NHASH.png';
+import linen from '../public/projects/linen.png';
 
 export default function Dashboard() {
   return (
@@ -32,43 +31,31 @@ export default function Dashboard() {
             </Link>
           </p>
         </div>
-        <div className="flex flex-col w-full">
+        <div className=" w-full">
           <ProjectsCard />
         </div>
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
-          {/* <GitHub /> */}
-          {/* <Analytics /> */}
-          {/* <Unsplash /> */}
-        </div>
+
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
-          Projects
+          Other Projects
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           Curious what I have worked on or currently working on? Here&apos;s
           some of my projects on Github.
         </p>
-        <div className="flex flex-col-1 w-full my-3">
+        <div className="flex flex-col-1 left-0 w-full my-3">
           <SoloCard
-            header="project5"
-            link="/projects/project5"
-            tools="Built w/ React, Figma, &"
-            image={scientia}
+            header="NHASH Display"
+            link="/projects/nhash"
+            tools="Built w/ HTML"
+            image={nhash}
           />
         </div>
-        <div className="flex flex-col w-full my-3">
+        <div className="flex flex-col right-0 w-full my-3">
           <SoloCard
-            header="project5"
-            link="/projects/project5"
-            tools="Built w/ React, Figma, &"
-            image={scientia}
-          />
-        </div>
-        <div className="flex flex-col w-full my-3">
-          <SoloCard
-            header="project5"
-            link="/projects/project5"
-            tools="Built w/ React, Figma, &"
-            image={scientia}
+            header="Custom Linen"
+            link="/projects/linen"
+            tools="Built w/ Vite HTML, Figma, & Tailwind"
+            image={linen}
           />
         </div>
       </div>

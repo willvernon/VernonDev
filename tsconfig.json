@@ -16,6 +16,6 @@
     "baseUrl": ".",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./sanity.config.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./sanity.config.ts", "components/Splash.tsx", "pages/home.js"],
   "exclude": ["node_modules"]
 }

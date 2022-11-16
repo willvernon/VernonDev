@@ -35,11 +35,11 @@ export default function SoloCard({ header, link, tools, image }) {
             />
           </svg>
         </div>
-        <p className="text-slate-400">{tools}</p>
+        <p className="text-slate-400 text-xs">{tools}</p>
       </div>
       <div className="shrink-0">
         <Image
-          className=" md:w-[10rem] sm:w-[5rem] rounded-xl"
+          className=" md:w-[10rem] w-[5rem] rounded-xl"
           layout=""
           objectFit="cover"
           src={image}

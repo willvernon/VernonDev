@@ -1,13 +1,14 @@
-import Container from 'components/Container';
+import PageContainer from 'components/PageContainer';
 
 import SnippetsCard from 'components/SnippetsCard';
 
-import tailwind from '../../public/tailwindLogo.png';
 import react from '../../public/react.png';
+import sendGrid from '../../public/sendgrid.png';
+import firebase from '../../public/firebase.png';
 
 export default function Snippets() {
   return (
-    <Container
+    <PageContainer
       title="Code Snippets – Will Vernon"
       description="A collection of code snippets – including serverless functions, Node.js scripts, and CSS tricks."
     >
@@ -16,8 +17,8 @@ export default function Snippets() {
           Code Snippets
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          --- These are a collection of code snippets I&apos;ve used in the past
-          and saved. Some are Serverless Functions, which include set up
+          These are a collection of code snippets I&apos;ve used in the past and
+          saved. Some are Serverless Functions, which include set up
           instructions. Others are anything from random CSS snippets to Node.js
           scripts.
         </p>
@@ -29,49 +30,31 @@ export default function Snippets() {
             image={react}
           />
           <SnippetsCard
-            header="test1"
-            link=""
-            tools="react + tailwind"
-            image={tailwind}
+            header="Container"
+            link="/snippets/container"
+            tools="Nav and Fotter Container"
+            image={react}
           />
           <SnippetsCard
-            header="test1"
-            link=""
-            tools="react + tailwind"
-            image={tailwind}
+            header="Mobile Nav"
+            link="/snippets/mobileNav"
+            tools="full screen side nav"
+            image={react}
           />
           <SnippetsCard
-            header="test1"
-            link=""
-            tools="react + tailwind"
-            image={tailwind}
+            header="SendGrid"
+            link="/snippets/sendGrid"
+            tools="Send an email to a user"
+            image={sendGrid}
           />
           <SnippetsCard
-            header="test1"
-            link=""
-            tools="react + tailwind"
-            image={tailwind}
-          />
-          <SnippetsCard
-            header="test1"
-            link=""
-            tools="react + tailwind"
-            image={tailwind}
-          />
-          <SnippetsCard
-            header="test1"
-            link=""
-            tools="react + tailwind"
-            image={tailwind}
-          />
-          <SnippetsCard
-            header="test1"
-            link=""
-            tools="react + tailwind"
-            image={tailwind}
+            header="Firebase"
+            link="/snippets/firebase"
+            tools="Read data from Realtime Database"
+            image={firebase}
           />
         </div>
       </div>
-    </Container>
+    </PageContainer>
   );
 }

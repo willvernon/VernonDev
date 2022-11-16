@@ -1,12 +1,10 @@
 import 'styles/global.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'next-themes';
 import { SessionProvider } from 'next-auth/react';
-import { Inter } from '@next/font/google';
+
 import { Analytics } from '@vercel/analytics/react';
-
-const interVariable = Inter();
-
+import Loading from '../components/Loading';
 
 export default function App({
   Component,
@@ -14,8 +12,9 @@ export default function App({
 }) {
   return (
     <SessionProvider session={session}>
+      {/* <Loading /> */}
       <ThemeProvider attribute="class">
-        <main className={interVariable.className}>
+        <main className="font-mono ">
           <Component {...pageProps} />
           <Analytics />
         </main>
