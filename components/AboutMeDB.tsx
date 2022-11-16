@@ -9,20 +9,20 @@ import resume from 'public/static/Resume.png';
 
 function AboutMeDB() {
   return (
-    <div className="grid grid-flow-col grid-glow-rows md:grid-cols-8 md:grid-rows-3   max-md:hidden max-h-[45rem] w-full h-full my-4 bg-[#191919] rounded-2xl">
+    <div className="grid grid-flow-col grid-glow-rows md:grid-cols-8 md:grid-rows-3   max-md:hidden max-h-[45rem] w-full h-full my-4 bg-[#171717] rounded-2xl">
       {/* About Me Box */}
-      <div className="row-start-1 row-span-2 col-start-1 col-span-4 m-1 rounded-xl bg-white text-center">
-        <div className="w-auto md:h-[55%]  bg-white mt-32   text-center">
+      <div className="row-start-1 row-span-2 col-start-1 col-span-4 m-1 rounded-xl  text-center">
+        <div className="w-auto md:h-[55%] mt-32   text-center">
           {' '}
           <h3 className="text-[#e64c33] text-center pt-4 font-black text-6xl italic tracking-widest font-sans">
             About Me
           </h3>
         </div>
-        <div className=" text-black font-bold text-center ">
+        <div className=" text-white font-bold text-center ">
           <Ticker direction="toRight">
             {({ index }) => (
               <>
-                <h1> - Code - Tech - Design - Dallas Cowboys </h1>
+                <h1> - Code - Tech - Design - Sports </h1>
               </>
             )}
           </Ticker>
