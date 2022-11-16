@@ -1,15 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 import avatar from '../../public/MeMoji-Mac.png';
 import avatarBW from 'public/avatar.jpg';
 import sketch from '../../public/projects/bblgx-website/bblgx-website-sketch.png';
 import mock from '../../public/projects/bblgx-website/bblgx-w-mock.png';
 import bblgx from 'public/projects/bblgx.png';
 import fmock from '../../public/projects/bblgx-website/mock-final.png';
-
-
 
 // import { BsFillXSquareFill } from 'react-icons';
 

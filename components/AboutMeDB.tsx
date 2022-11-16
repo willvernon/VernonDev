@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import MeMoji from '../../public/avatar.jpg';
-import Computer from '../../public/static/computer.png';
+import MeMoji from '../public/avatar.jpg';
+import Computer from '../public/static/computer.png';
 import Link from 'next/link';
 
 function AboutMeDB() {

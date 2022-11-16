@@ -34,16 +34,16 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="/">
-            Twitter
+            Resume
           </ExternalLink>
           <ExternalLink href="https://github.com/willvernon">GitHub</ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
           <Link
-            href="/uses"
+            href="/contact"
             className="text-gray-500 hover:text-gray-600 transition"
           >
-            Uses
+            Contact
           </Link>
           
           <Link

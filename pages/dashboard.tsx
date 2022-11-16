@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
-
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 
 import ProjectsCard from 'components/projects/project';
 import SoloCard from 'components/projects/SoloCard';

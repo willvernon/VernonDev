@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 import avatar from '../../public/MeMoji-Mac.png';
 import avatarBW from 'public/avatar.jpg';
 import sketch from '../../public/projects/Inner-Mngt/UserFlow.png';

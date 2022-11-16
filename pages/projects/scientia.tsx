@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 import sketch from '../../public/projects/scientia/sketches.png';
 import mock from '../../public/projects/scientia/wireframe.png';
 import hero from 'public/projects/scientia/hero.png';

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 import MeMoji from '../../public/MeMoji-Mac.png';
 import avatarBW from 'public/avatar.jpg';
 import sketch from '../../public/projects/bblgx-website/bblgx-website-sketch.png';
@@ -38,14 +38,12 @@ export default function LgxWebsite() {
                 React: <a href="https://reactjs.org/">Check it Out!</a>
               </li>
               <li>
-                TailwindCSS:{' '}
-                <a href="https://tailwindcss.com">Take a Look</a>
+                TailwindCSS: <a href="https://tailwindcss.com">Take a Look</a>
               </li>
               <li>
                 Website: <Link href="https://bblgx.com">bblgx.com</Link>
               </li>
             </ul>
-            
           </div>
           <h1 className="text-[#e64c33]">Bio</h1>
           <h2>Job Title</h2>

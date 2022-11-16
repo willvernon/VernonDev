@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 
 import cs from 'public/projects/sneakerx/sneakerx-cs-pt1.png';
 

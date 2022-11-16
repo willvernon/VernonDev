@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 
-import Container from '../components/Container';
+import Container from '../components/PageContainer';
 import BlogPostCard from '../components/BlogPostCard';
 
 import VideoCard from '../components/ToolCard';

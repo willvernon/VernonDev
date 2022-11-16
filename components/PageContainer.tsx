@@ -7,8 +7,8 @@ import cn from 'classnames';
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
 
-import { MoonIcon } from '../components/Theme/Moon';
-import { SunIcon } from '../components/Theme/Sun';
+import { MoonIcon } from './Theme/Moon';
+import { SunIcon } from './Theme/Sun';
 
 function NavItem({ href, text }) {
   const router = useRouter();
@@ -29,7 +29,7 @@ function NavItem({ href, text }) {
   );
 }
 
-export default function Container(props) {
+export default function PageContainer(props) {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 import sketch from '../../public/projects/nhash/sketch.png';
 import login from '../../public/projects/nhash/login.png';
 import hero from 'public/projects/nhash/hero.png';

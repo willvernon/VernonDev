@@ -1,4 +1,4 @@
-import Container from 'components/Container';
+import Container from 'components/PageContainer';
 import Image from 'next/image';
 import resume from 'public/static/Resume.png';
 import Link from 'next/link';
@@ -7,7 +7,6 @@ import avatar from '../public/MeMoji-Mac.png';
 export default function Uses() {
   return (
     <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-     
       <Image
         className="rounded-3xl"
         src={resume}
@@ -15,9 +14,9 @@ export default function Uses() {
         width={2164 / 2}
         height={1546 / 2}
         priority
-            />
-            <br />
-            <br />
+      />
+      <br />
+      <br />
       <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
         My Gear
       </h1>
@@ -27,7 +26,7 @@ export default function Uses() {
         and my love for learning new things to maximize quality of life and
         productivity.
       </p>
-      
+
       <Image
         className="rounded-lg"
         alt={`My computer desk`}
