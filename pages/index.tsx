@@ -10,6 +10,7 @@ import VideoCard from '../components/ToolCard';
 import Loading from '../components/Loading';
 import Splash from '../components/Splash';
 import AboutMeDB from 'components/AboutMeDB';
+import BigText from 'components/BigText';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <PageContainer className="">
           <div className="flex flex-col mt-6  justify-center items-start max-w-2xl border-gray-200 dark:border-slate-700 mx-auto md:pb-16">
             <Splash />
+            {/* <BigText slides={['Welcome!', 'Im Will', 'Vernon']} /> */}
 
             <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
               Featured Posts
