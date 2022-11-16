@@ -1,5 +1,6 @@
 const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
 
+
 module.exports = {
   content: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx'],
   darkMode: 'class',
@@ -22,7 +23,9 @@ module.exports = {
       },
       fontFamily: {
         
-        mono: ['JetBrains Mono', ...fontFamily.mono],
+        'mono': ['JetBrains Mono', ...fontFamily.mono],
+        
+        
         
       },
       typography: (theme) => ({

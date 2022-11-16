@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://use.typekit.net/zgh8wdb.css");
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -17,6 +19,7 @@
     @apply font-bold font-mono;
     
   }
+  h3 {}
   html {
     min-width: 360px;
     scroll-behavior: smooth;
@@ -230,3 +233,4 @@ table {
 .prose .callout > p {
   margin: 0 !important;
 }
+

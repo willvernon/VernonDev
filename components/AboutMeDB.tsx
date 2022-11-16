@@ -4,20 +4,28 @@ import MeMoji from '../public/avatar.jpg';
 import Computer from '../public/static/computer.png';
 import Link from 'next/link';
 import Rocky from 'public/static/Rocky.png';
+import Ticker from 'react-ticker';
+import resume from 'public/static/Resume.png';
 
 function AboutMeDB() {
   return (
     <div className="grid grid-flow-col grid-glow-rows md:grid-cols-8 md:grid-rows-3   max-md:hidden max-h-[45rem] w-full h-full my-4 bg-[#191919] rounded-2xl">
       {/* About Me Box */}
       <div className="row-start-1 row-span-2 col-start-1 col-span-4 m-1 rounded-xl bg-white text-center">
-        <div className="w-auto md:h-[55%]  bg-white mt-32  border-b border-slate-500 text-center">
+        <div className="w-auto md:h-[55%]  bg-white mt-32   text-center">
           {' '}
-          <p className="text-slate-500 font-sans text-center pt-4 font-black text-3xl tracking-widest">
+          <h3 className="text-[#e64c33] text-center pt-4 font-black text-6xl italic tracking-widest font-sans">
             About Me
-          </p>
+          </h3>
         </div>
-        <div className=" text-black font-bold ">
-          <p className=" m-auto">Coder-Designer-Tech-Sports</p>
+        <div className=" text-black font-bold text-center ">
+          <Ticker direction="toRight">
+            {({ index }) => (
+              <>
+                <h1> - Code - Tech - Design - Dallas Cowboys </h1>
+              </>
+            )}
+          </Ticker>
         </div>
       </div>
       {/* Computer Image Box */}
@@ -114,10 +122,10 @@ function AboutMeDB() {
       </div>
       {/* Box 6 */}
       <div className="row-start-3 row-span-1 col-start-1 col-span-2 m-1 rounded-xl bg-transparent h-25 w-25 text-center">
-        Box 6
+        
       </div>
       {/* MeMoji Green */}
-      <div className="row-start-3 row-span-1 col-start-3 col-span-2 m-1 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-800 h-25 w-25 text-center">
+      <div className="row-start-3 row-span-1 col-start-3 col-span-2 m-1 rounded-xl bg-gradient-to-r from-slate-600 to-slate-800 h-25 w-25 text-center">
         <Image
           src={MeMoji}
           alt="Box 7"
@@ -128,7 +136,7 @@ function AboutMeDB() {
       </div>
       {/* Box 8 */}
       <div className="row-start-3 row-span-1 col-start-5 col-span-4 m-1 rounded-xl bg-white h-25 w-25 text-left">
-        <div className="flex text-black m-3 text-xs">
+        <div className="flex text-black m-3 ml-10">
           <ul className="p-2">
             <h2 className="text-lg pb-2">Links</h2>
             {/* <li>
