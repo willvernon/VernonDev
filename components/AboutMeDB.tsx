@@ -3,6 +3,7 @@ import React from 'react';
 import MeMoji from '../public/avatar.jpg';
 import Computer from '../public/static/computer.png';
 import Link from 'next/link';
+import Rocky from 'public/static/Rocky.png';
 
 function AboutMeDB() {
   return (
@@ -16,7 +17,7 @@ function AboutMeDB() {
           </p>
         </div>
         <div className=" text-black font-bold ">
-          <p className=' m-auto'>Coder-Designer-Tech-Sports</p>
+          <p className=" m-auto">Coder-Designer-Tech-Sports</p>
         </div>
       </div>
       {/* Computer Image Box */}
@@ -24,7 +25,7 @@ function AboutMeDB() {
         <Image
           src={Computer}
           alt="Box 7"
-          width='200'
+          width="200"
           className="rounded-xl opacity-80 ml-3"
         />
       </div>
@@ -103,8 +104,13 @@ function AboutMeDB() {
         </div>
       </div>
       {/* Box 5 */}
-      <div className="row-start-2 row-span-1 col-start-7 col-span-2 m-1 rounded-xl bg-white h-25 w-25 text-center">
-        Box 5
+      <div className="row-start-2 row-span-1 col-start-7 col-span-2 m-1 rounded-xl bg-white h-25 w-15 text-center">
+        <Image
+          src={Rocky}
+          alt="Box 7"
+          width={150}
+          className="ml-auto rounded-xl h-full object-center py- grayscale"
+        />
       </div>
       {/* Box 6 */}
       <div className="row-start-3 row-span-1 col-start-1 col-span-2 m-1 rounded-xl bg-transparent h-25 w-25 text-center">
