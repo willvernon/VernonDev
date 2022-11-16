@@ -18,7 +18,7 @@ export default function Home() {
       <Suspense fallback={null}>
         <PageContainer className="">
           <div className="flex flex-col mt-6  justify-center items-start max-w-2xl border-gray-200 dark:border-slate-700 mx-auto md:pb-16">
-            <div className='mb-40'>
+            <div className='mb-40 mx-auto'>
               <Splash />
               {/* <BigText slides={['Welcome!', 'Im Will', 'Vernon']} /> */}
             </div>
