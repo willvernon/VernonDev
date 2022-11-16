@@ -3,15 +3,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 
-import Container from '../components/PageContainer';
+import PageContainer from '../components/PageContainer';
 import BlogPostCard from '../components/BlogPostCard';
 
 import VideoCard from '../components/ToolCard';
+import Splash from 'components/Splash';
 
 export default function Home() {
   return (
     <Suspense fallback={null}>
-      <Container className="font-mono">
+      <PageContainer className="">
         <div className="flex flex-col mt-6  justify-center items-start max-w-2xl border-gray-200 dark:border-slate-700 mx-auto md:pb-16">
           <div className="flex flex-col mb-10 sm:flex-row items-start">
             <div className="md:w-[13rem]  invisible sm:visible relative mb-8 sm:mb-0 mr-12">
@@ -136,7 +137,7 @@ export default function Home() {
           </a>
           <span className="h-16" />
         </div>
-      </Container>
+      </PageContainer>
     </Suspense>
   );
 }

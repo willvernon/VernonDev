@@ -1,4 +1,4 @@
-import Container from 'components/PageContainer';
+import PageContainer from 'components/PageContainer';
 
 import SnippetsCard from 'components/SnippetsCard';
 
@@ -9,7 +9,7 @@ import firebase from '../../public/firebase.png';
 
 export default function Snippets() {
   return (
-    <Container
+    <PageContainer
       title="Code Snippets – Will Vernon"
       description="A collection of code snippets – including serverless functions, Node.js scripts, and CSS tricks."
     >
@@ -56,6 +56,6 @@ export default function Snippets() {
           />
         </div>
       </div>
-    </Container>
+    </PageContainer>
   );
 }

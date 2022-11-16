@@ -1,11 +1,11 @@
-import Container from 'components/Container';
+import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
 import mobile from '../../public/snippets-photos/mobile.png';
 import css from '../../public/snippets-photos/mobile-css.png';
 
 export default function reactSearch() {
   return (
-    <Container>
+    <PageContainer>
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           React Mobile Nav
@@ -33,6 +33,6 @@ export default function reactSearch() {
         />
 
       </article>
-    </Container>
+    </PageContainer>
   );
 }

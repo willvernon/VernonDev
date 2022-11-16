@@ -1,10 +1,10 @@
-import Container from 'components/Container';
+import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
 import container from '../../public/snippets-photos/container.png';
 
 export default function reactSearch() {
   return (
-    <Container>
+    <PageContainer>
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           React Page Container Snippet
@@ -21,6 +21,6 @@ export default function reactSearch() {
           priority
         />
       </article>
-    </Container>
+    </PageContainer>
   );
 }
