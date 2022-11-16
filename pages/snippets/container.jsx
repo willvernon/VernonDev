@@ -1,6 +1,6 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import container from '../../public/static/snippets-photos/container.png';
+
 
 export default function reactSearch() {
   return (
@@ -10,12 +10,13 @@ export default function reactSearch() {
           React Page Container Snippet
         </h1>
         <p className="text-gray-700 dark:text-gray-300 mt-2 mb-8">
-          React Container to wrap page content around a component that includes the navbar mobile navbar and footer.
+          React Container to wrap page content around a component that includes
+          the navbar mobile navbar and footer.
         </p>
         <Image
           className="rounded-3xl"
           alt={`container`}
-          src={container}
+          src="https://github.com/willvernon/VernonDev/blob/367c72b19c8ff4deb174bb1a93b1de9069287d7d/public/static/snippets-photos/Container.png"
           width={2164 / 2}
           height={1546 / 2}
           priority

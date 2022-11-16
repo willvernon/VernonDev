@@ -16,7 +16,7 @@ export default function reactSearch() {
         <Image
           className="rounded-3xl"
           alt={`SendGrid`}
-          src={sendGrid}
+          src="https://github.com/willvernon/VernonDev/blob/367c72b19c8ff4deb174bb1a93b1de9069287d7d/public/static/snippets-photos/SendGrid.png"
           width={2164 / 2}
           height={1546 / 2}
           priority

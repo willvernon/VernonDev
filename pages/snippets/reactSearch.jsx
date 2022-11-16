@@ -1,6 +1,5 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import reactSearchSnippet from '../../public/static/snippets-photos/react-search.png';
 
 export default function reactSearch() {
     return (
@@ -15,7 +14,7 @@ export default function reactSearch() {
           <Image
             className="rounded-3xl"
             alt={`search`}
-            src={reactSearchSnippet}
+            src="https://github.com/willvernon/VernonDev/blob/367c72b19c8ff4deb174bb1a93b1de9069287d7d/public/static/snippets-photos/react-search.png"
             width={2164 / 2}
             height={1546 / 2}
             priority

@@ -1,8 +1,6 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
 
-import firebase from '../../public/static/snippets-photos/firebase.png';
-import firebase2 from '../../public/static/snippets-photos/firebase2.png';
 
 export default function reactSearch() {
   return (
@@ -17,7 +15,7 @@ export default function reactSearch() {
         <Image
           className="rounded-3xl"
           alt={`firebase`}
-          src={firebase}
+          src="https://github.com/willvernon/VernonDev/blob/367c72b19c8ff4deb174bb1a93b1de9069287d7d/public/static/snippets-photos/Firebase.png"
           width={2164 / 2}
           height={1546 / 2}
           priority
@@ -26,12 +24,11 @@ export default function reactSearch() {
         <Image
           className="rounded-3xl"
           alt={`firebase2`}
-          src={firebase2}
+          src="https://github.com/willvernon/VernonDev/blob/367c72b19c8ff4deb174bb1a93b1de9069287d7d/public/static/snippets-photos/firebase2.png"
           width={2164 / 2}
           height={1546 / 2}
           priority
         />
-        
       </article>
     </PageContainer>
   );

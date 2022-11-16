@@ -1,7 +1,6 @@
 import PageContainer from 'components/PageContainer';
 import Image from 'next/image';
-import mobile from '../../public/static/snippets-photos/mobile.png';
-import css from '../../public/static/snippets-photos/mobile-css.png';
+
 
 export default function reactSearch() {
   return (
@@ -15,8 +14,8 @@ export default function reactSearch() {
         </p>
         <Image
           className="rounded-3xl"
-          alt='Mobile Nav'
-          src={mobile}
+          alt="Mobile Nav"
+          src="https://github.com/willvernon/VernonDev/blob/367c72b19c8ff4deb174bb1a93b1de9069287d7d/public/static/snippets-photos/Mobile.png"
           width={2164 / 2}
           height={1546 / 2}
           priority
@@ -25,13 +24,12 @@ export default function reactSearch() {
         <p>Mobile Nav .Module.css</p>
         <Image
           className="rounded-3xl"
-          alt='Mobile Nav CSS'
-          src={css}
+          alt="Mobile Nav CSS"
+          src="https://github.com/willvernon/VernonDev/blob/367c72b19c8ff4deb174bb1a93b1de9069287d7d/public/static/snippets-photos/mobile-css.png"
           width={2164 / 2}
           height={1546 / 2}
           priority
         />
-
       </article>
     </PageContainer>
   );
