@@ -28,17 +28,17 @@ export default function Home() {
             <div className="flex gap-6 flex-col md:flex-row">
               <BlogPostCard
                 title="What are the best security practices for a very online future."
-                slug="security-standards-for-the-digital-age"
+                slug="/"
                 gradient="from-[#feb4c8] to-[#818CF8]"
               />
               <BlogPostCard
                 title="Working smarter not harder, a Productivity Stack for creating the Second Brain."
-                slug="productivity-stack"
+                slug="/"
                 gradient="from-[#946ee7] via-[#3B82F6] to-[#33aaea]"
               />
               <BlogPostCard
                 title="Working with implementing CMS like Sanity inside of React & Next.JS."
-                slug="content-management-system"
+                slug="/"
                 gradient="from-[#8afdea] via-[#FCA5A5] to-[#FECACA]"
               />
             </div>
