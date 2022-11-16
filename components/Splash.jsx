@@ -6,7 +6,7 @@ import BigText from './BigText';
 
 function Splash() {
   return (
-    <div>
+    
       <div className="flex flex-col sm:flex-row items-start h-screen m-auto mt-20">
         <div className="md:w-[13rem]  max-sm:hidden relative mr-12">
           <Image
@@ -16,7 +16,7 @@ function Splash() {
             src="/avatar.jpg"
             sizes="30vw"
             priority
-            className="rounded-full filter  md:h-[12rem] md:w-[15rem]"
+            className="rounded-full "
           />
         </div>
         <div className="flex flex-col ">
@@ -24,7 +24,7 @@ function Splash() {
           
         </div>
       </div>
-    </div>
+    
   );
 }
 
