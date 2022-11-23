@@ -6,6 +6,7 @@ import NextLink from 'next/link';
 import cn from 'classnames';
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
+import Link from 'next/link';
 
 import { MoonIcon } from './Theme/Moon';
 import { SunIcon } from './Theme/Sun';
@@ -48,6 +49,16 @@ export default function PageContainer(props) {
     type: 'website',
     ...customMeta
   };
+  const ExternalLink = ({ href, children }) => (
+    <a
+      className="text-gray-400 hover:bg-gray-800 transition bg-opacity-60 rounded-md py-1.5"
+      target="_blank"
+      rel="noopener noreferrer"
+      href={href}
+    >
+      {children}
+    </a>
+  );
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 text-black dark:text-white">
@@ -80,9 +91,10 @@ export default function PageContainer(props) {
             <NavItem href="/" text="Home" />
             <NavItem href="/about" text="About" />
             <NavItem href="/dashboard" text="Dashboard" />
-            <NavItem href="/blog" text="Blog" />
+            <ExternalLink href="https://innominate-coder.vercel.app" > Blog </ExternalLink>
             <NavItem href="/snippets" text="Snippets" />
           </div>
+
 
           <button
             aria-label="Toggle Dark Mode"
