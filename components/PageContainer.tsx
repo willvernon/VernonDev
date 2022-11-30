@@ -72,9 +72,6 @@ export default function PageContainer(props) {
       </Head>
       <div className="flex flex-col justify-center px-8 ">
         <nav className="flex font-mono items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 bg-transparent bg-opacity-60 dark:text-gray-100 z-10">
-          <a href="#skip" className="skip-nav">
-            Skip to content
-          </a>
           <div className="ml-[-0.60rem] ">
             <MobileMenu />
             <NavItem href="/" text="Home" />
@@ -87,7 +84,7 @@ export default function PageContainer(props) {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-9 h-9 pt-[0.3rem] pl-[0.3rem] bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all "
+            className="w-9 h-9 pt-[0.3rem] pl-[0.3rem] bg-gray-200 rounded-lg dark:bg-[#4273d52c] flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all "
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
