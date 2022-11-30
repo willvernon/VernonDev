@@ -9,7 +9,7 @@ import resume from 'public/static/Resume.png';
 
 function AboutMeDB() {
   return (
-    <div className="grid grid-flow-col grid-glow-rows md:grid-cols-8 md:grid-rows-3   max-md:hidden max-h-[45rem] w-full h-full my-4 bg-[#171717] rounded-2xl">
+    <div className="grid grid-flow-col max-w-xl m-auto grid-glow-rows md:grid-cols-8 md:grid-rows-3 max-md:hidden max-h-[35rem] w-full h-full bg-[#171717] rounded-2xl">
       {/* About Me Box */}
       <div className="row-start-1 row-span-2 col-start-1 col-span-4 m-1 rounded-xl  text-center">
         <div className="w-auto md:h-[55%] mt-32   text-center">
@@ -19,13 +19,15 @@ function AboutMeDB() {
           </h3>
         </div>
         <div className=" text-white font-bold text-center ">
-          <Ticker direction="toRight">
+          {/* <Ticker direction="toRight">
             {({ index }) => (
               <>
-                <h1> - Code - Tech - Design - Sports </h1>
+                <h1>Digital Craftsman, ,</h1>
+                
               </>
             )}
-          </Ticker>
+          </Ticker> */}
+          <p className="text-sm">Digital Craftsman & Sports Fan </p>
         </div>
       </div>
       {/* Computer Image Box */}
@@ -44,7 +46,7 @@ function AboutMeDB() {
             className="text-gray-100 text-sm font-semibold pl-3"
             style={{ transitionDelay: '175ms' }}
           >
-            <Link href="#Resume" className="flex w-auto pb-4">
+            <Link href="" className="flex w-auto pb-4">
               Resume
             </Link>
           </li>
@@ -52,7 +54,7 @@ function AboutMeDB() {
             className="text-gray-100 text-sm font-semibold pl-3"
             style={{ transitionDelay: '200ms' }}
           >
-            <Link href="#MyGear" className="flex w-auto pb-4">
+            <Link href="" className="flex w-auto pb-4">
               My Gear
             </Link>
           </li>
@@ -78,7 +80,7 @@ function AboutMeDB() {
       <div className="row-start-2 row-span-1 col-start-5 col-span-2 m-1 rounded-xl bg-transparent h-25 w-25 text-center">
         <div className="w-auto h-14 bg-orange-400 rounded-xl text-left pl-3 pt-3 font-mono text-xs text-slate-700 font-black">
           <Link
-            href="/blog"
+            href="/dashboard"
             className="flex items-center mt-1 text-slate-800  rounded-lg hover:text-gray-800  transition-all h-6"
           >
             <>
@@ -121,9 +123,7 @@ function AboutMeDB() {
         />
       </div>
       {/* Box 6 */}
-      <div className="row-start-3 row-span-1 col-start-1 col-span-2 m-1 rounded-xl bg-transparent h-25 w-25 text-center">
-        
-      </div>
+      <div className="row-start-3 row-span-1 col-start-1 col-span-2 m-1 rounded-xl bg-transparent h-25 w-25 text-center"></div>
       {/* MeMoji Green */}
       <div className="row-start-3 row-span-1 col-start-3 col-span-2 m-1 rounded-xl bg-gradient-to-r from-slate-600 to-slate-800 h-25 w-25 text-center">
         <Image
@@ -137,7 +137,7 @@ function AboutMeDB() {
       {/* Box 8 */}
       <div className="row-start-3 row-span-1 col-start-5 col-span-4 m-1 rounded-xl bg-white h-25 w-25 text-left">
         <div className="flex text-black m-3 ml-10">
-          <ul className="p-2">
+          <ul className="">
             <h2 className="text-lg pb-2">Links</h2>
             {/* <li>
                 Twitter: <a href="https://twitter.com/">@---</a>

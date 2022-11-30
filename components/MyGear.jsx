@@ -6,7 +6,7 @@ import avatar from '../public/MeMoji-Mac.png';
 
 export default function Uses() {
   return (
-    <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+    <article className="flex mt-16 flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
       <Image
         className="rounded-3xl"
         src={resume}
