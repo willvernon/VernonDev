@@ -83,21 +83,21 @@ export default function Home() {
             />
             <VideoCard
               index="02"
-              href="https://www.figma.com"
-              length="Figma"
-              title="UX Design, App Structure, Planning"
+              href="https://www.warp.dev/"
+              length="Warp"
+              title="A Modern Terminal with Features"
             />
             <VideoCard
               index="03"
-              href="https://www.notion.so/"
-              length="Notion"
-              title="Work Dashboard & Data"
+              href="https://www.inkdrop.app/"
+              length="InkDrop"
+              title="Markdown App For Documentation & Notes"
             />
             <VideoCard
               index="04"
-              href="https://sanity.io"
-              length="Sanity"
-              title="The CMS I Have Been Using"
+              href="https://www.raycast.com/"
+              length="RayCast"
+              title="A Command Line To Replace Alfred & Spotlight"
             />
             <a
               target="_blank"
