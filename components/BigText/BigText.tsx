@@ -1,34 +1,35 @@
 // https://github.com/delbaoliveira/website/blob/main/ui/challenge/TextSlider.tsx
-import React from 'react'
+import React from 'react';
 
-import { useInterval } from 'react-use'
+import { useInterval } from 'react-use';
+import Image from 'next/image';
+import classNames from 'lib/classNames';
 
-import classNames from 'lib/classNames'
 
 interface BigTextProps {
-  slides: Array<string>
+  slides: Array<string>;
 }
 
 export default function BigText({ slides }: BigTextProps) {
-  const [currentSlide, setSlide] = React.useState(0)
+  const [currentSlide, setSlide] = React.useState(0);
 
-  const totalSlides = slides.length
+  const totalSlides = slides.length;
 
   useInterval(() => {
     if (totalSlides - 1 === currentSlide) {
-      setSlide(0)
+      setSlide(0);
     } else {
-      setSlide(currentSlide + 1)
+      setSlide(currentSlide + 1);
     }
-  }, 2000)
+  }, 2000);
 
   return (
-    <div className='flex flex-col max-w-2xl  items-center text-6xl font-extrabold tracking-tight md:text-8xl'>
-      <div className='flex flex-col items-center'>
-        <p className='text-2xl tracking-normal sm:text-3xl'>Welcome!</p>
+    <div className="flex flex-col max-w-2xl  items-center text-6xl font-extrabold tracking-tight md:text-8xl z-10">
+      <div className="flex flex-col items-center">
+        <p className="text-2xl tracking-normal sm:text-3xl">Welcome!</p>
         {slides.map((text, index) => {
           return (
-            <span key={text} className='relative block text-center'>
+            <span key={text} className="relative block text-center">
               <span
                 className={classNames(
                   'absolute transition duration-1000',
@@ -50,15 +51,26 @@ export default function BigText({ slides }: BigTextProps) {
                 {text}
               </span>
             </span>
-          )
+          );
         })}
-        <p className='mt-4 text-2xl tracking-normal sm:text-3xl'>
+        <p className="mt-4 text-2xl tracking-normal sm:text-3xl">
           Front-End Developer.
         </p>
-        <p className='mt-6 text-lg font-medium tracking-normal text-tertiary'>
-          Hope you enjoy. 🚀
-        </p>
+        <div className='flex content-center'>
+          <Image
+            alt="Will Vernon"
+            height={176}
+            width={176}
+            src="/avatar.jpg"
+            sizes="30vw"
+            priority
+            className=" "
+          />
+          <p className="mt-12 text-lg font-medium tracking-normal text-tertiary">
+            Hope you enjoy. 🚀
+          </p>
+        </div>
       </div>
     </div>
-  )
+  );
 }

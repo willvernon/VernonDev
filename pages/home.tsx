@@ -13,16 +13,7 @@ export default function Home() {
   return (
     <Suspense fallback={null}>
       <PageContainer className="">
-        <div className="flex flex-col mt-6  justify-center items-start max-w-2xl border-gray-200 dark:border-slate-700 mx-auto md:pb-16">
-        
-          
-
-
-
-
-
-          
-
+        <div className="flex flex-col mt-6  justify-center items-start max-w-2xl border-gray-200 dark:border-slate-700 mx-auto md:pb-16 ">
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Featured Posts
           </h3>
@@ -65,8 +56,6 @@ export default function Home() {
               </svg>
             </>
           </Link>
-
-          
         </div>
       </PageContainer>
     </Suspense>
