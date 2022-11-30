@@ -46,7 +46,7 @@ function AboutMeDB() {
             className="text-gray-100 text-sm font-semibold pl-3"
             style={{ transitionDelay: '175ms' }}
           >
-            <Link href="" className="flex w-auto pb-4">
+            <Link href="/resume" className="flex w-auto pb-4">
               Resume
             </Link>
           </li>

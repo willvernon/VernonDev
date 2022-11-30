@@ -1,20 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
-import resume from '../public/static/Resume.png'
+import resume from '../public/static/Resume.png';
+import PageContainer from '../components/PageContainer'
 
 function Resume() {
   return (
-    <div className="w-[100%] h-[25rem] relative">
-      <div className="absolute top-0 left-0 w-[100%] h-[25rem] rounded-[2rem] ">
-        <Image
-          className="absolute z-1"
-          layout="fill"
-          objectFit="cover"
-          src={resume}
-          alt="/"
-        />
-      </div>
-    </div>
+    <PageContainer>
+      
+        <div className="rounded-[2rem] m-16">
+          <Image
+            className=" m-auto"
+            layout=""
+            objectFit="cover"
+            src={resume}
+            alt="/"
+          />
+        </div>
+      
+    </PageContainer>
   );
 }
 
