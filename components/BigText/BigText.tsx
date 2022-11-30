@@ -5,7 +5,6 @@ import { useInterval } from 'react-use';
 import Image from 'next/image';
 import classNames from 'lib/classNames';
 
-
 interface BigTextProps {
   slides: Array<string>;
 }
@@ -56,19 +55,19 @@ export default function BigText({ slides }: BigTextProps) {
         <p className="mt-4 text-2xl tracking-normal sm:text-3xl">
           Front-End Developer.
         </p>
-        <div className='flex content-center'>
+        <div className="flex content-center">
+          <p className="mt-12 text-lg font-medium tracking-normal text-tertiary">
+            Hope you enjoy. 🚀
+          </p>
           <Image
             alt="Will Vernon"
-            height={176}
-            width={176}
-            src="/avatar.jpg"
+            height={125}
+            width={125}
+            src="/MeMoji-Mac.png"
             sizes="30vw"
             priority
             className=" "
           />
-          <p className="mt-12 text-lg font-medium tracking-normal text-tertiary">
-            Hope you enjoy. 🚀
-          </p>
         </div>
       </div>
     </div>
