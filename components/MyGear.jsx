@@ -38,7 +38,8 @@ export default function Uses() {
       <div className="prose dark:prose-dark w-full">
         <h3 id="computer-office">Computer / Office</h3>
         <ul>
-          <li>16&quot; Macbook Pro M1pro</li>
+          <li>16&quot; Macbook Pro M1-pro</li>
+          <li>13.6&quot; Macbook air M2</li>
           <li>12.9&quot; iPad Pro M1</li>
           <li>32&quot; Dell 4k HDR Curved Monitor</li>
           <li>Vertical Asus Gaming Monitor</li>
