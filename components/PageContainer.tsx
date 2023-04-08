@@ -21,7 +21,7 @@ function NavItem({ href, text }) {
         isActive
           ? 'font-semibold text-gray-800 dark:text-gray-200'
           : 'font-normal text-gray-600 dark:text-gray-400',
-        'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
+        'hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block'
       )}
     >
       <span className="capsize">{text}</span>
@@ -50,7 +50,7 @@ export default function PageContainer(props) {
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 text-black dark:text-white ">
+    <div className="bg-gray-50 text-black dark:bg-gray-900 dark:text-white ">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -71,12 +71,12 @@ export default function PageContainer(props) {
         )}
       </Head>
       <div className="flex flex-col justify-center px-8 ">
-        <nav className="flex font-mono items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 bg-transparent bg-opacity-60 dark:text-gray-100 z-10">
+        <nav className="relative z-10 mx-auto flex w-full max-w-2xl items-center justify-between border-gray-200 bg-transparent bg-opacity-60 pt-8 pb-8  font-mono text-gray-900 dark:border-gray-700 dark:text-gray-100 sm:pb-16">
           <div className="ml-[-0.60rem] ">
             <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/about" text="About" />
-            <NavItem href="/dashboard" text="Dashboard" />
+            <NavItem href="/projects" text="Projects" />
             <NavItem href="/blog" text="Blog" />
             <NavItem href="/snippets" text="Snippets" />
           </div>
@@ -84,7 +84,7 @@ export default function PageContainer(props) {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-9 h-9 pt-[0.3rem] pl-[0.3rem] bg-gray-200 rounded-lg dark:bg-[#4273d52c] flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all "
+            className="flex h-9 w-9 items-center justify-center rounded-lg bg-gray-200 pt-[0.3rem] pl-[0.3rem] ring-gray-300  transition-all hover:ring-2  dark:bg-[#4273d52c] "
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
@@ -95,7 +95,7 @@ export default function PageContainer(props) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-5 h-5 text-gray-800 dark:text-gray-200"
+                className="h-5 w-5 text-gray-800 dark:text-gray-200"
               >
                 {resolvedTheme === 'dark' ? <MoonIcon /> : <SunIcon />}
               </svg>
@@ -105,7 +105,7 @@ export default function PageContainer(props) {
       </div>
       <main
         id="skip"
-        className="flex flex-col font-mono justify-center px-8 bg-gray-50 dark:bg-gray-900"
+        className="flex flex-col justify-center bg-gray-50 px-8 font-mono dark:bg-gray-900"
       >
         {children}
         <Footer />
