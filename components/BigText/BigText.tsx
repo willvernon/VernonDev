@@ -23,7 +23,7 @@ export default function BigText({ slides }: BigTextProps) {
   }, 2000);
 
   return (
-    <div className="flex flex-col max-w-2xl  items-center text-6xl font-extrabold tracking-tight sm:text-[5rem] md:text-[10rem] z-10">
+    <div className="z-10 flex max-w-2xl  flex-col items-center text-6xl font-extrabold tracking-tight sm:text-[5rem] md:text-[10rem]">
       <div className="flex flex-col items-center">
         <p className="text-2xl tracking-normal sm:text-3xl">Welcome!</p>
         {slides.map((text, index) => {
@@ -41,7 +41,7 @@ export default function BigText({ slides }: BigTextProps) {
 
               <span
                 className={classNames(
-                  'decoration-clone bg-clip-text text-transparent bg-gradient-to-r',
+                  'bg-gradient-to-r decoration-clone bg-clip-text text-transparent',
                   index === 0 ? 'from-yellow-400 via-red-500 to-pink-500' : '',
                   index === 1 ? 'from-purple-400 via-pink-500 to-red-500' : '',
                   index === 2 ? 'from-green-400 to-blue-500' : ''
@@ -53,10 +53,10 @@ export default function BigText({ slides }: BigTextProps) {
           );
         })}
         <p className="mt-4 text-2xl tracking-normal sm:text-3xl">
-          Front-End Developer.
+          Digital Craftsman.
         </p>
         <div className="flex content-center">
-          <p className="mt-12 text-lg font-medium tracking-normal text-tertiary">
+          <p className="text-tertiary mt-12 text-lg font-medium tracking-normal">
             Hope you enjoy. 🚀
           </p>
           <Image

@@ -12,20 +12,20 @@ export default function Dashboard() {
   return (
     <Container
       title="Dashboard – Will Vernon"
-      description="My personal dashboard, built with Next.js API routes deployed as serverless functions."
+      description="My personal dashboard, built with Next.js API routes deployed as serverless functions. "
     >
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+      <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
           Dashboard
         </h1>
         <div className="mb-8">
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            This is my personal dashboard, To see my top Projects check the
-            pinned tabs at the top. I&apos;ll be add more and more as i go and
-            have time to build case studies.Also Check out my&nbsp;
+          <p className="mb-4 text-gray-600 dark:text-gray-400">
+            These are only a few projects, i build about 2-3 a week. I&apos;ll
+            be add more and more as i go and have time to build case studies.
+            Also Check out my&nbsp;
             <Link
               href="/blog"
-              className="text-gray-900 dark:text-gray-100 underline"
+              className="text-gray-900 underline dark:text-gray-100"
             >
               blog series.
             </Link>
@@ -35,14 +35,14 @@ export default function Dashboard() {
           <ProjectsCard />
         </div>
 
-        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+        <h2 className="mb-4 mt-16 text-3xl font-bold tracking-tight text-black dark:text-white">
           Other Projects
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
+        <p className="mb-4 text-gray-600 dark:text-gray-400">
           Curious what I have worked on or currently working on? Here&apos;s
           some of my projects on Github.
         </p>
-        <div className="flex flex-col-1 left-0 w-full my-3">
+        <div className="flex-col-1 left-0 my-3 flex w-full">
           <SoloCard
             header="NHASH Display"
             link="/projects/nhash"
@@ -50,7 +50,7 @@ export default function Dashboard() {
             image={nhash}
           />
         </div>
-        <div className="flex flex-col right-0 w-full my-3">
+        <div className="right-0 my-3 flex w-full flex-col">
           <SoloCard
             header="Custom Linen"
             link="/projects/linen"
