@@ -7,6 +7,8 @@ import SoloCard from 'components/projects/SoloCard';
 import scientia from '../public/projects/scientia.png';
 import nhash from '../public/projects/NHASH.png';
 import linen from '../public/projects/linen.png';
+import dennys from '../public/projects/dennys/hero.png';
+import boswells from '../public/projects/boswells/hero.png';
 
 export default function Dashboard() {
   return (
@@ -52,10 +54,18 @@ export default function Dashboard() {
         </div>
         <div className="right-0 my-3 flex w-full flex-col">
           <SoloCard
-            header="Custom Linen"
-            link="/projects/linen"
-            tools="Built w/ Vite HTML, Figma, & Tailwind"
-            image={linen}
+            header="Dennys Marina"
+            link="/projects/dennys"
+            tools="Built w/ HTML, Figma, & Twig"
+            image={dennys}
+          />
+        </div>
+        <div className="right-0 my-3 flex w-full flex-col">
+          <SoloCard
+            header="Boswells Golf"
+            link="/projects/boswells"
+            tools="Built w/ HTML, Figma, & Twig"
+            image={boswells}
           />
         </div>
       </div>

@@ -14,10 +14,10 @@ import wire2 from '../../public/projects/Inner-Mngt/WireFrame2.png';
 
 export default function InnerMgnt() {
   return (
-    <Container title="Logistics Website">
+    <Container title="Intranet">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Inner Management
+          Intranet Management
         </h1>
         <div className="w-[100%] h-[31rem] relative">
           <div className="absolute top-0 left-0 w-[100%] h-[25rem] rounded-[2rem] " />
@@ -32,7 +32,7 @@ export default function InnerMgnt() {
           <div className="absolute top-[80%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2"></div>
         </div>
         <div className="mb-8 prose dark:prose-dark leading-6">
-          <h1 className="text-[#e64c33]">Inner Management App</h1>
+          <h1 className="text-[#e64c33]">Intranet Management App</h1>
           <h2>Job Title</h2>
           <p>Developer & Designer Contractor---</p>
           <div className="text-center max-w-screen-lg">
