@@ -38,37 +38,32 @@ export default function Uses() {
       <div className="prose w-full dark:prose-dark">
         <h3 id="computer-office">Computer / Office</h3>
         <ul>
-          <li>16&quot; Macbook Pro M1-pro</li>
-          <li>13.6&quot; Macbook air M2</li>
-          <li>12.9&quot; iPad Pro M1</li>
+          <li>14&quot; Macbook Pro M3-Max</li>
+          <li>12.9&quot; iPad Pro M4</li>
           <li>32&quot; Dell 4k HDR Curved Monitor</li>
-          <li>Vertical Asus Gaming Monitor</li>
           <li>Logitech MX Master 3 Mouse</li>
           <li>NuPhy Air 75 Mechanical Keyboard **</li>
           <li>Apple Magic Trackpad</li>
         </ul>
         <h3 id="coding">Coding</h3>
         <ul>
-          <li>Editor: VSCode</li>
-          <li>Gitkraken or GH Client</li>
-          <li>Theme: My Modded Andromeda</li>
-          <li>Terminal: Warp / zsh **Highly Recommend</li>
+          <li>Editor: Nvim</li>
+          <li>Theme: My Modded Monokai Soda</li>
+          <li>Terminal: Ghostty / Fish</li>
         </ul>
         <h3 id="software">Software</h3>
         <ul>
           <li>BitWarden</li>
-          <li>Proton **Highly Recommend</li>
-          <li>Arc Browser **Highly Recommend</li>
-          <li>Workana</li>
-          <li>Raycast **Highly Recommend</li>
-          <li>Notion</li>
+          <li>Proton </li>
+          <li>Brave</li>
+          <li>Eagle</li>
+          
+          <li>Raycast</li>
+          <li>Obsidian</li>
         </ul>
         <h3 id="other-tech">Other Tech</h3>
         <ul>
-          <li>Apple Airpods Pro</li>
-          <li>Apple Watch</li>
-          <li>Apple iPhone</li>
-          <li>Lacie USB-C External HDD</li>
+          <li>Nothing Open Ear Headphones</li>
         </ul>
       </div>
     </article>

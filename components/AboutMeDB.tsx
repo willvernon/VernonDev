@@ -54,15 +54,15 @@ function AboutMeDB() {
             className="text-gray-100 text-sm font-semibold pl-3"
             style={{ transitionDelay: '200ms' }}
           >
-            <Link href="" className="flex w-auto pb-4">
-              My Gear
+            <Link href="https://willvernon.bearblog.dev/" className="flex w-auto pb-4">
+              Dev Log
             </Link>
           </li>
           <li
             className="text-gray-100 text-sm font-semibold pl-3"
             style={{ transitionDelay: '250ms' }}
           >
-            <Link href="/dashboard" className="flex w-auto pb-4">
+            <Link href="/projects" className="flex w-auto pb-4">
               Projects
             </Link>
           </li>
@@ -138,7 +138,7 @@ function AboutMeDB() {
       <div className="row-start-3 row-span-1 col-start-5 col-span-4 m-1 rounded-xl bg-white h-25 w-25 text-left">
         <div className="flex text-black m-3 ml-10">
           <ul className="">
-            <h2 className="text-lg pb-2">Links</h2>
+            <h2 className="text-lg pb-4">Links</h2>
             {/* <li>
                 Twitter: <a href="https://twitter.com/">@---</a>
               </li> */}
@@ -151,12 +151,6 @@ function AboutMeDB() {
             <li className="py-1">
               LinkedIn:{' '}
               <a href="https://www.linkedin.com/in/wmvernon/">/wmvernon</a>
-            </li>
-            <li className="py-1">
-              ENS:{' '}
-              <a href="https://app.ens.domains/name/vernondev.eth/details">
-                Vernnondev.eth
-              </a>
             </li>
           </ul>
         </div>

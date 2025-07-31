@@ -7,6 +7,7 @@ import login from '../../public/projects/nhash/login.png';
 import hero from 'public/projects/nhash/hero.png';
 import prototype from '../../public/projects/nhash/prototype.png';
 import prototype2 from '../../public/projects/nhash/prototype-v2.png';
+import rig from '../../public/projects/nhash/rig.jpeg'
 
 // import { BsFillXSquareFill } from 'react-icons';
 
@@ -33,7 +34,7 @@ export default function Project4() {
               <h2 className="text-[#e64c33]">Tools Used</h2>
               <li>NHASH</li>
               <li>Adobe XD</li>
-              <li>Vanilla HTML</li>
+              <li>Vanilla HTML & some JSON</li>
             </ul>
           </div>
           <h1 className="text-[#e64c33]">Project Overview</h1>
@@ -41,7 +42,7 @@ export default function Project4() {
             During my Internship i was tasked with building something intuitive
             and helpful and the CEO asked for me to build some BitCoin Miners.
             He also requested a way that he could have a web app open on his
-            monitor so we can see live feedback of what the miners are doing.
+            monitor so we can see live feedback of what the miners are doing and which algorithms were being used with which machine.
             <br />
             This is how I built a prototype for the App.
           </p>
@@ -218,6 +219,16 @@ export default function Project4() {
             Also makes it easy to view information from the rig without being
             directly next to it.
           </li>
+
+            <div className="grid-cols-start-2">
+              <Image
+                alt="UserFlow"
+                width={300}
+                quality={100}
+                src={rig}
+                className="rounded-md"
+              />
+            </div>
         </div>
       </div>
     </Container>

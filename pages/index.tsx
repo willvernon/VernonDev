@@ -82,9 +82,9 @@ export default function Home() {
             />
             <VideoCard
               index="02"
-              href="https://www.warp.dev/"
-              length="Warp"
-              title="A Modern Terminal with Features"
+              href="https://en.eagle.cool/"
+              length="Eagle"
+              title="A perfect organizer of assets and photos for projects"
             />
             <VideoCard
               index="03"
